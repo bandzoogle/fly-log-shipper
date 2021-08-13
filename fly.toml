@@ -1,14 +1,10 @@
-# fly.toml file generated for log-shipper on 2021-05-24T22:46:08+02:00
-
-app = "fly-log-shipper-example"
+app = "bz-logs"
 
 kill_signal = "SIGINT"
 kill_timeout = 5
 
-[experimental]
-  allowed_public_ports = []
-  auto_rollback = true
-
+[env]
+  ORG = "bandzoogle"
 
 [metrics]
   port = 9598
